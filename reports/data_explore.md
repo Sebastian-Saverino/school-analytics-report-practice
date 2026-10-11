@@ -6,6 +6,8 @@ One row represents a student and the variables that surround the student when a 
 
 1. What is the primary driver for low and high exam scores?
 
+Attendance is the primary driver for low and high exam scores
+
 2. How does gender affect an individuals exam score?
 
 3. How does physical activity affect students?
@@ -38,4 +40,12 @@ parental_education_level	object	3	0	0.05 ordinal
 distance_from_home	object	3	0	0.05 ordinal
 gender	object	2	0	0.03 bool
 exam_score	int64	45	0	0.71 discrete
+
+
+
+
+## One interpretation
+
+I found that sleep hours had little to no effect on the exam score, with the highest correlation being between attendance, so prioritizing making it to class is how you can most effectievely increase your grade. 
+
 

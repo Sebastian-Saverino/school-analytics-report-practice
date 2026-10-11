@@ -1404,6 +1404,7 @@ dependencies = [
     { name = "ruff" },
     { name = "scikit-learn" },
     { name = "seaborn" },
+    { name = "statsmodels" },
     { name = "tqdm" },
     { name = "typer" },
 ]
@@ -1427,6 +1428,7 @@ requires-dist = [
     { name = "ruff" },
     { name = "scikit-learn" },
     { name = "seaborn", specifier = ">=0.13.2" },
+    { name = "statsmodels", specifier = ">=0.15.0" },
     { name = "tqdm" },
     { name = "typer" },
 ]
