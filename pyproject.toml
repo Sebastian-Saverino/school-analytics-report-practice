@@ -16,6 +16,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License"
 ]
 dependencies = [
+    "fastparquet>=2026.9.0",
     "fg-data-profiling[notebook]>=4.20.0",
     "ipykernel>=7.4.0",
     "ipython",
@@ -29,6 +30,7 @@ dependencies = [
     "numpy",
     "pandas",
     "pip",
+    "pyarrow>=26.0.0",
     "python-dotenv",
     "ruff",
     "scikit-learn",
