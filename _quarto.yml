@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+
+website:
+  title: "Data-Driven Process Improvement Report"
+  search: false
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    lang: en
+    toc: true
+    toc-title: "Contents"
+    toc-location: right-body
+    toc-depth: 2
+    number-sections: false
+    page-layout: article
+    mainfont: "Segoe UI, Helvetica, Arial, sans-serif"
+    fontsize: 17px
+    linestretch: 1.65
+    fig-align: center
+    link-external-newwindow: false
+    grid:
+      body-width: 800px
+      margin-width: 250px
+      sidebar-width: 40px
+      gutter-width: 2rem

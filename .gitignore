@@ -1,6 +1,10 @@
 # Data
 /data/
 
+# Local Quarto output
+/_site/
+/.quarto/
+
 # Mac OS-specific storage files
 .DS_Store
 
@@ -189,3 +193,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+**/*.quarto_ipynb

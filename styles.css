@@ -1,0 +1,94 @@
+:root {
+  --report-ink: #243447;
+  --report-muted: #526375;
+  --report-accent: #245b78;
+  --report-rule: #dce3e9;
+}
+
+body {
+  color: var(--report-ink);
+  background: #fff;
+}
+
+#title-block-header {
+  padding-bottom: 1.4rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid var(--report-accent);
+}
+
+h1.title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.18;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+main h1:not(.title) {
+  margin-top: 2.8rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--report-rule);
+  font-size: 1.7rem;
+  font-weight: 650;
+}
+
+main h2 {
+  margin-top: 1.9rem;
+  border-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: 650;
+}
+
+p { margin-bottom: 1.15rem; }
+main { overflow-wrap: anywhere; }
+a { color: var(--report-accent); text-underline-offset: 0.18em; }
+main a { overflow-wrap: anywhere; }
+a:focus-visible { outline: 2px solid var(--report-accent); outline-offset: 3px; }
+
+main table {
+  width: 100%;
+  margin: 1.3rem 0;
+  font-size: 0.94rem;
+  border-color: var(--report-rule);
+}
+
+main table > :not(caption) > * > * { padding: 0.85rem 0.9rem; }
+main table thead th { background: #edf2f6; color: var(--report-ink); }
+main table tbody tr:nth-child(even) { background: #f7f9fb; }
+main table caption, figcaption { color: var(--report-muted); font-size: 0.9rem; }
+.report-details {
+  padding: 1.2rem 1.4rem;
+  background: #f7f9fb;
+  border-left: 3px solid var(--report-rule);
+  font-size: 0.94rem;
+}
+.report-details p { margin-bottom: 0.5rem; }
+.report-details p:last-child { margin-bottom: 0; }
+
+figure { margin: 1.5rem 0 1.8rem; }
+figure img { display: block; width: 100%; max-width: 100%; height: auto; }
+figcaption { margin-top: 0.7rem; text-align: left; }
+#TOC { font-size: 0.88rem; line-height: 1.45; }
+#TOC a { color: var(--report-muted); }
+#TOC ul { display: block; }
+#TOC-body { display: none; }
+
+@media (max-width: 991px) {
+  #TOC-body { display: block !important; margin-bottom: 2rem; }
+  #TOC-body ul { padding-left: 1.2rem; }
+  #TOC-body a { font-size: 0.94rem; }
+}
+
+@media (max-width: 767px) {
+  body { font-size: 16px; }
+  main h1:not(.title) { font-size: 1.45rem; margin-top: 2.2rem; }
+  main h2 { font-size: 1.18rem; }
+  main table { font-size: 0.85rem; }
+  main table > :not(caption) > * > * { padding: 0.6rem 0.4rem; }
+  .report-details { padding: 1rem; }
+}
+
+@media print {
+  body { color: #000; }
+  #quarto-margin-sidebar { display: none; }
+  figure, table { break-inside: avoid; }
+}
