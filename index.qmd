@@ -142,3 +142,7 @@ https://news.stanford.edu/stories/2017/05/studying-strategically-equals-improved
 
 *Citation incomplete: publication date and individual author details, if
 applicable, were not supplied.*
+
+::: {.small}
+**AI-use note:** Sebastian Saverino performed the EDA, made the analytical decisions, interpreted the findings, and wrote the original report. AI supported editing, Python syntax and visualization code, formatting and citation cleanup, Markdown/Quarto conversion and styling, and documentation. Final analytical decisions and conclusions remained the author's.
+:::
